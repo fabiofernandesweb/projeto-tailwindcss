@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Projeto TailwindCSS</title>
+</head>
+
+<body class="bg-slate-950">
+    <header class="bg-slate-950 text-white">
+        <div class="container mx-auto px-4">
+
+            <div class="flex items-center justify-between mt-5 md:w-[70%] md:mx-auto h-10 relative">
+
+                <button id="btnMenu" class="md:hidden text-2xl">
+                    ☰
+                </button>
+
+                <!-- Logo -->
+                <h1 class="text-xl font-extrabold italic absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
+                    Meu Site
+                </h1>
+                <nav id="menu"
+                    class="hidden flex-col absolute top-14 left-0 w-full bg-slate-800 p-4 gap-4
+                md:static md:flex md:flex-row md:bg-transparent md:p-0 md:w-auto md:items-center md:gap-4 text-slate-400">
+                    <a href="#" class="px-2 hover:text-white">Link</a>
+                    <a href="#" class="px-2 hover:text-white">Link</a>
+                    <a href="#" class="px-2 hover:text-white">Link</a>
+                    <a href="#" class="px-2 hover:text-white">Link</a>
+    
+                </nav>
+                <a href="#"
+                        class="bg-linear-to-b from-violet-400 to-violet-600 text-white px-3 py-1 rounded font-bold
+                    hover:from-violet-300 hover:to-violet-500 hover:shadow-lg               hover:shadow-violet-500/50 hover:text-violet-950">
+                        Login
+                    </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <div class="relative flex flex-col justify-center p-5 mt-5 h-80 items-center w-full md:w-[70%] md:mx-auto">
+        <div
+            class="absolute animate-pulse w-28 bg-linear-to-b from-pink-500 to-purple-600 inset-x-0 inset-y-16 rotate-45 mx-auto blur-3xl scale-x-150-150 opacity-65">
+        </div>
+        <div
+            class="absolute animate-pulse w-28 bg-linear-to-b from-violet-500 to-green-600 inset-x-0 inset-y-16 rotate-180 mx-auto blur-3xl scale-x-105 opacity-65">
+        </div>
+
+        <h1 class="relative mt-10 text-center text-5xl md:text-7xl font-bold text-white">Tailwind é Massa!</h1>
+        <h2 class="relative font-light w-full lg:w-1/2 text-center text-slate-400 mt-4">Isso é um teste para praticar
+            TailwindCSS. Muito show de bola ver tudo
+            na prática direto no código!</h2>
+        <a href="#"
+            class="relative bg-linear-to-b from-violet-400 to-violet-600 px-12 py-2 rounded text-white font-bold mr-3 ml-5 mt-5 hover:from-violet-300 hover:to-violet-500 hover:shadow-lg hover:shadow-violet-700 hover:text-violet-950">Aprender
+            Agora</a>
+    </div>
+
+    <div class="p-5 flex justify-center">
+        <img class="w-full lg:w-1/2" src="./src/img/imagem.webp" alt="imagem ">
+    </div>
+
+    <footer class="flex flex-col bg-linear-to-b from-slate-950 to-slate-900 justify-center items-center h-40 ">
+        <p class="text-white">&copy; 2026. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+        const btn = document.getElementById("btnMenu");
+        const menu = document.getElementById("menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
