@@ -11,7 +11,7 @@ Projeto com Tailwind CSS focado em responsividade e UI moderna.
 ---
 
 ### Preview
-- https://github.com/fabiofernandesweb/projeto-tailwindcss/
+- https://fabiofernandesweb.github.io/projeto-tailwindcss/
 
 ---
 
